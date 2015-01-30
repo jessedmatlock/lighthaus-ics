@@ -214,15 +214,15 @@ ul.sidebar-menu li a {
     background: #F8F7F6;
     text-decoration: none;
 }
-ul.sidebar-menu li a.active,
-ul.sidebar-menu li a:hover,
-ul.sidebar-menu li a:focus {
+ul.sidebar-menu li.active a,
+ul.sidebar-menu li:hover a,
+ul.sidebar-menu li:focus a {
     background: #E7E6E2;
 }
 
 @media screen and (min-width: 1024px) {
-	ul.sidebar-menu li a:hover:after,
-	ul.sidebar-menu li a.active:after {
+	ul.sidebar-menu li:hover a:after,
+	ul.sidebar-menu li.active a:after {
 	    content: "";
 	    display: block;
 	    width: 0;
@@ -241,8 +241,8 @@ ul.sidebar-menu li a:focus {
 	    opacity: 0.0;
 	}
 	
-	ul.sidebar-menu li a:hover:after,
-	ul.sidebar-menu li a.active:after {
+	ul.sidebar-menu li:hover a:after,
+	ul.sidebar-menu li.active a:after {
 		opacity: 1;
 	}
 	
