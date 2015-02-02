@@ -179,6 +179,13 @@
 	transition: all 500ms ease-out;
 }
 
+#sort-search-form {
+	padding:0;
+	background:none;
+	margin:0px;
+	border:none;
+}
+
 .search-controls.show-advanced + #advanced-search-form {
 	visibility: visible;
 	max-height: 700px;
@@ -213,6 +220,7 @@ ul.sidebar-menu li a {
     line-height: 58px;
     background: #F8F7F6;
     text-decoration: none;
+    text-transform: uppercase;
 }
 ul.sidebar-menu li.active a,
 ul.sidebar-menu li:hover a,
