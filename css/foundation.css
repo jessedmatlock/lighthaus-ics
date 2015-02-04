@@ -2293,8 +2293,6 @@ meta.foundation-mq-topbar {
 .top-bar ul {
     margin-bottom: 0;
     list-style: none;
-	transition: all 300ms ease-out;
-
 }
 
 .top-bar .row {
@@ -2420,6 +2418,8 @@ meta.foundation-mq-topbar {
 .top-bar.expanded ul.right,
 .top-bar.expanded ul.dropdown {
 	background: #f8f7f6;
+	transition: all 300ms ease-out;
+
 }
 .top-bar.expanded .toggle-topbar a {
     color: #c60f13;
