@@ -2244,16 +2244,26 @@ meta.foundation-mq-topbar {
 
 .contain-to-grid.shadow,
 .contain-to-grid.shadow .top-bar {
-	height: 75px !important;
+	height: 75px;
 }
 .contain-to-grid.shadow li.name,
 .contain-to-grid.shadow ul.right {
 	margin: 10px 0 0 0;	
 }
 .contain-to-grid.shadow li.name,
-.contain-to-grid.shadow li.name #logo {
+.contain-to-grid.shadow li.name h1,
+.contain-to-grid.shadow li.name a {
 	height: 50px;
+	padding: 0;
+	margin: 0;
+	display: block;
 }
+.contain-to-grid.shadow li.name #logo.hide-for-expanded {
+	height: 50px;
+	margin-top: 8px;
+	display: block;
+}
+
 
 .fixed {
     width: 100%;
@@ -2403,12 +2413,12 @@ meta.foundation-mq-topbar {
 }
 .top-bar .name h1 a .show-for-expanded,
 .top-bar.expanded .name h1 a .hide-for-expanded {
-	display: none;
+	display: none !important;
 }
 
 
 .top-bar.expanded .name h1 a .show-for-expanded {
-	display: block;
+	display: block !important;
 }
 
 .top-bar.expanded .title-area {
@@ -2419,7 +2429,6 @@ meta.foundation-mq-topbar {
 .top-bar.expanded ul.dropdown {
 	background: #f8f7f6;
 	transition: all 300ms ease-out;
-
 }
 .top-bar.expanded .toggle-topbar a {
     color: #c60f13;

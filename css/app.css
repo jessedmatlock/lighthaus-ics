@@ -417,8 +417,17 @@ ul.sidebar-menu li:focus a {
 	font: bold 100px/1em "Raleway", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	margin: 0;
 	color: #fff;
-}
+	transition: all 300ms ease-out;
 
+}
+@media screen and (max-width: 1280px) {
+	#intro-section #intro-caption p {
+		font-size: 60px;
+	}
+	#intro-section #intro-caption {
+		top: 200px;
+	}
+}
 @media screen and (max-width: 1024px) {
 	#intro-section {
 		padding-bottom: 0;
@@ -440,7 +449,7 @@ ul.sidebar-menu li:focus a {
 		left: 20px;
 	}
 	
-	#intro-section #intro-caption  p{
+	#intro-section #intro-caption p {
 		font-size: 50px;
 	}
 	
