@@ -2229,15 +2229,30 @@ meta.foundation-mq-topbar {
 	box-shadow: 0px 1px 2px #888;
 	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 	background: #fff !important;
+	transition: all 300ms ease-out;
 }
 .contain-to-grid.transparent {
 	background: none;
 	transition: background 300ms ease-out;
-	
 }
 
 .contain-to-grid .top-bar {
     margin-bottom: 0;
+}
+
+/* make nav-bar smaller on scroll */
+
+.contain-to-grid.shadow,
+.contain-to-grid.shadow .top-bar {
+	height: 75px !important;
+}
+.contain-to-grid.shadow li.name,
+.contain-to-grid.shadow ul.right {
+	margin: 10px 0 0 0;	
+}
+.contain-to-grid.shadow li.name,
+.contain-to-grid.shadow li.name #logo {
+	height: 50px;
 }
 
 .fixed {
@@ -2278,6 +2293,8 @@ meta.foundation-mq-topbar {
 .top-bar ul {
     margin-bottom: 0;
     list-style: none;
+	transition: all 300ms ease-out;
+
 }
 
 .top-bar .row {
@@ -2319,7 +2336,7 @@ meta.foundation-mq-topbar {
     height: 7.375rem;
     margin: 2rem  0 00;
     font-size: 16px;
-    
+   	transition: all 300ms ease-out;
 }
 .top-bar .name h1 a, 
 .top-bar .name h2 a, 

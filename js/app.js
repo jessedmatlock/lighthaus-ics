@@ -24,7 +24,7 @@ jQuery(function ($) {
 // window scroll function to apply drop shadow to main nav, only after scolling 100px. To maintain design match.
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
-    if (scroll > 10) {
+    if (scroll > 50) {
         $(".contain-to-grid").addClass("shadow");
 		$('.homepage #logo').attr('src', 'img/logo.png');
     } else {
