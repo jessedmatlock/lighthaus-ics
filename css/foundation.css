@@ -2258,7 +2258,7 @@ meta.foundation-mq-topbar {
 	margin: 0;
 	display: block;
 }
-.contain-to-grid.shadow li.name #logo.hide-for-expanded {
+.contain-to-grid.shadow li.name #logo {
 	height: 50px;
 	margin-top: 8px;
 	display: block;
