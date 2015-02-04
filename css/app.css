@@ -262,6 +262,7 @@ ul.sidebar-menu li:focus a {
 	padding-bottom: 40px;
 	background-color: #F8F7F6;
 	margin-top: 40px;
+	min-height: 500px;
 }
 .grid-box p {
 	font: normal 1em/1.7em "OpenSans", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
