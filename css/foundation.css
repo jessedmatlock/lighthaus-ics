@@ -2229,16 +2229,41 @@ meta.foundation-mq-topbar {
 	box-shadow: 0px 1px 2px #888;
 	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 	background: #fff !important;
+	transition: all 300ms ease-out;
 }
 .contain-to-grid.transparent {
 	background: none;
 	transition: background 300ms ease-out;
-	
 }
 
 .contain-to-grid .top-bar {
     margin-bottom: 0;
 }
+
+/* make nav-bar smaller on scroll */
+
+.contain-to-grid.shadow,
+.contain-to-grid.shadow .top-bar {
+	height: 75px;
+}
+.contain-to-grid.shadow li.name,
+.contain-to-grid.shadow ul.right {
+	margin: 10px 0 0 0;	
+}
+.contain-to-grid.shadow li.name,
+.contain-to-grid.shadow li.name h1,
+.contain-to-grid.shadow li.name a {
+	height: 50px;
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+.contain-to-grid.shadow li.name #logo {
+	height: 50px;
+	margin-top: 8px;
+	display: block;
+}
+
 
 .fixed {
     width: 100%;
@@ -2319,7 +2344,7 @@ meta.foundation-mq-topbar {
     height: 7.375rem;
     margin: 2rem  0 00;
     font-size: 16px;
-    
+   	transition: all 300ms ease-out;
 }
 .top-bar .name h1 a, 
 .top-bar .name h2 a, 
@@ -2388,12 +2413,12 @@ meta.foundation-mq-topbar {
 }
 .top-bar .name h1 a .show-for-expanded,
 .top-bar.expanded .name h1 a .hide-for-expanded {
-	display: none;
+	display: none !important;
 }
 
 
 .top-bar.expanded .name h1 a .show-for-expanded {
-	display: block;
+	display: block !important;
 }
 
 .top-bar.expanded .title-area {
@@ -2403,6 +2428,7 @@ meta.foundation-mq-topbar {
 .top-bar.expanded ul.right,
 .top-bar.expanded ul.dropdown {
 	background: #f8f7f6;
+	transition: all 300ms ease-out;
 }
 .top-bar.expanded .toggle-topbar a {
     color: #c60f13;
