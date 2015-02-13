@@ -1658,7 +1658,7 @@ button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[dis
 }
 
 button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
-    background-color: #063046;
+    background-color: #E7E6E2;
     border-color: #052638;
     color: #FFFFFF;
     cursor: default;
@@ -1667,7 +1667,7 @@ button.disabled.secondary, button[disabled].secondary, .button.disabled.secondar
 }
 
 button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
-    background-color: #052638;
+    background-color: #E7E6E2;
 }
 
 button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
@@ -1675,7 +1675,7 @@ button.disabled.secondary:hover, button.disabled.secondary:focus, button[disable
 }
 
 button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
-    background-color: #063046;
+    background-color: #E7E6E2;
 }
 
 button.disabled.success, button[disabled].success, .button.disabled.success, .button[disabled].success {
