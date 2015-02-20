@@ -60,3 +60,8 @@ $(".article-next").click(function(){
 $(".article-prev").click(function(){
 	articles.trigger('owl.prev');
 })
+
+// Show/Hide for page assets
+$('.see-more').on('click', function(){
+	$(this).prev('.expandable').toggleClass('expanded');
+});
