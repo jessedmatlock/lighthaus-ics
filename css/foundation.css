@@ -3840,6 +3840,7 @@ meta.foundation-mq-topbar {
     line-height: 1.3;
     margin-bottom: 0.625rem;
     font: 500 1.375rem/1.2em "RaleWay", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    text-transform:uppercase;
 }
 
 .panel h1.subheader, .panel h2.subheader, .panel h3.subheader, .panel h4.subheader, .panel h5.subheader, .panel h6.subheader {
