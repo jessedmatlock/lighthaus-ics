@@ -45,6 +45,14 @@
 	color: #4D14B6;
 }
 
+.pink-text {
+	color: #CE009F;
+}
+
+.orange-text {
+	color: #EA812C;
+}
+
 .radio-2 {
 	display: block;
 	width: 50%;
@@ -154,6 +162,14 @@
 /* SEARCH CONTROLS */
 .search-controls {
 	margin-bottom: 20px;
+
+}
+
+.search-controls.bordered > .row,
+.blog-posts {
+	margin-bottom: 20px !important;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eee;
 }
 
 
