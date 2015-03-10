@@ -45,6 +45,21 @@
 	color: #4D14B6;
 }
 
+.radio-2 {
+	display: block;
+	width: 50%;
+	float: left;
+	position: relative;
+	padding-left: 20px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.radio-2 input {
+	display: block;
+	position: absolute;
+	left: -18px;
+	top: 0;
+}
 /* ARTICLE LISTINGS */
 #articles {
 	margin-bottom: 40px;
