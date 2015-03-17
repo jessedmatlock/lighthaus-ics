@@ -104,6 +104,10 @@ img {
 img {
     -ms-interpolation-mode: bicubic;
 }
+img.blog-img {
+	display: block;
+	margin-bottom: 20px;
+}
 
 #map_canvas img,
 #map_canvas embed,
@@ -3831,6 +3835,15 @@ meta.foundation-mq-topbar {
 	list-style: inside;
 	font: normal 1em/2em  "OpenSans","Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
+.panel ul.categories {
+	margin-top: 20px !important;
+}
+.panel ul.categories li {
+		font: 600 13px/1.2 "Raleway", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.panel ul.categories li a {
+	text-decoration: none;
+}
 .panel > :first-child {
     margin-top: 0;
 }
@@ -4884,6 +4897,14 @@ p.lead {
     margin-bottom: 10px;
 }
 
+p.meta {
+	font: normal 14px/1.3 "Open Sans", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #666;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #E7E6E2;
+	margin-bottom: 1.1rem;
+	
+}
 /* Default header styles */
 
 h1, h2, h3, h4, h5, h6 {
@@ -4913,6 +4934,11 @@ h2 {
     border-bottom: 1px solid #E7E6E2;
     margin-bottom: 1.1rem;
     margin-top: 0.2rem;
+}
+h5+h2 {
+	border-bottom: none;
+	padding-bottom: 0;
+	margin-bottom: 5px;
 }
 
 h3 {
@@ -7094,7 +7120,7 @@ table thead tr th,
 [class*="block-grid-"] {
     display: block;
     padding: 0;
-    margin: 0 -0.625rem;
+    margin: 0 -0.625rem !important;
 }
 
 [class*="block-grid-"]:before, [class*="block-grid-"]:after {

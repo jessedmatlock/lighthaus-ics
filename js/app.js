@@ -15,11 +15,13 @@ function initialize() {
   });
 }
 
-google.maps.event.addDomListener(window, 'load', initialize);
 
 
 (function($) {
 	
+	if($('#map-canvas').length){
+		google.maps.event.addDomListener(window, 'load', initialize);		
+	}
 	// init Foundation
 	$(document).foundation();
 

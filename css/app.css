@@ -37,20 +37,28 @@
 	color: #399640 !important;
 }
 
+.teal-text {
+	color: #3A9E92 !important;
+}
+
+.royal-text {
+	color: #000099 !important;
+}
+
 .blue-text {
 	color: #277FB3 !important;
 }
 
 .purple-text {
-	color: #4D14B6;
+	color: #4D14B6 !important;
 }
 
 .pink-text {
-	color: #CE009F;
+	color: #CE009F !important;
 }
 
 .orange-text {
-	color: #EA812C;
+	color: #EA812C !important;
 }
 
 .radio-2 {
@@ -492,6 +500,7 @@ ul.sidebar-menu li:focus a {
 	padding-bottom:0 ;
 	height: auto;
 	min-height: 0;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -651,6 +660,31 @@ footer #locations-list li.separator:before {
 footer #locations-list li:first-child:after {
 	display: none;	
 }
+
+/* TAGS */
+.tags {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #E7E6E2;
+}
+.tags .fa {
+	color: #333F4F;	
+}
+.tags li {
+	margin-left: 10px;
+}
+.tags li a {
+	font: normal 13px/1.2em "Open Sans", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #242739;
+	text-decoration: none;
+	background: #F8F7F6;
+	padding: 5px 10px;
+}
+
+.tags li a:hover {
+	color: #F8F7F6;
+	background: #242739;
+}
+
 /* SOCIAL ICONS (bottom of article/page & footer */
 #social-icons {
 	margin: 20px auto;
@@ -658,10 +692,15 @@ footer #locations-list li:first-child:after {
 	font-size: 18px;
 }
 
+#social-icons.border-bottom {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #E7E6E2;	
+}
 #social-icons li {
 	text-align: center;
 	display: inline;
 	position: relative;
+	font-size: 14px;
 }
 #content-section #social-icons {
 	font-size: .75em;
@@ -684,6 +723,52 @@ footer #locations-list li:first-child:after {
 	color: #ff0000;
 }
 
+/* COMMENTS */
+#comments {
+
+}
+
+#comments .comment {
+	padding: 20px;
+	border: 1px solid #E7E6E2;	
+	margin-bottom: 20px;
+}
+
+#comments .comment .author {
+	font: 600 13px/1.2 "Raleway", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #242639;
+	margin-bottom: 10px;
+}
+
+#comments .comment p {
+	font: normal 14px/1.5 "Open Sans", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #666;	
+	margin-bottom: 10px;
+}
+#comments .comment .comment-date {
+	float: right;	
+	font-weight: 500;
+}
+
+
+#comments .comment .comment-reply {
+	font: normal 14px/1.5 "Open Sans", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	margin-bottom: 10px;
+	display: block;
+}
+
+#comments .comment .reply-count {
+	font: 600 13px/1.2 "Raleway", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #242639;
+	margin-bottom: 15px;
+	
+}
+
+#comments .comment .reply-comment {
+	background: #F8F7F6;
+	padding: 10px;
+	margin-top: 10px;
+}
 
 
 #copyright {
@@ -717,7 +802,7 @@ form {
 	padding: 20px;
 	margin-bottom: 20px;
 	border: 1px solid #eee;
-	background: #fafafa;
+	background: #F8F7F6;
 	clear: both;
 	overflow: hidden;
 }
@@ -725,6 +810,9 @@ form {
 form.transparent {
 	background: none !important;
 	border: none;
+}
+form.sidebar-form {
+	padding-top: 0;
 }
 form.dark-form {
 	background: #24283A;
@@ -737,11 +825,17 @@ form label {
 	color: #242639;
 	text-transform: uppercase;
 	margin: 0 0 5px;
+	position: relative;
+}
+form label.input {
+	padding-left: 20px;
 }
 form label input[type=checkbox],
 form label input[type=radio] {
-	display: inline-block;
-	margin: 0 5px 0 20px !important;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 form.dark-form label {
 	color: #eee;
@@ -767,16 +861,20 @@ form.light-form h3 {
 	color: #242639;
 }
 
-form .button.postfix {
+.button.postfix {
 	width: 45px;
 	border-radius: 45px;
-	line-height: 45px;
+	line-height: 43px;
 	margin: 0 auto;
 	display: block;
 	text-transform: uppercase;
 	height: 45px;
+	padding: 0;
+	color: #fff;
 }
-
+.button.postfix .fa {
+	color: #fff;
+}
 form textarea {
 	resize: vertical;
 	min-height: 200px;
@@ -785,11 +883,12 @@ form textarea {
 form .button {
 	text-transform: uppercase;
 	padding-top: 0.875rem;
-	padding-right: 2rem;
+	padding-right: 1rem;
 	padding-bottom: 0.875rem;
-	padding-left: 2rem;
+	padding-left: 1rem;
 	font-size: 1rem;
 	margin-bottom: 0;
+	width: 100%;
 }
 
 .homepage form .button.arrow-right {
@@ -971,6 +1070,15 @@ small.inline-input label {
 	small.inline-input label {
 		display: block;
 	}
+	form .button.arrow-right {
+		max-width: none !important;
+		width: 100%;
+		float: none;
+		margin-right:0 !important ;
+	}
+	form .button.arrow-right:after {
+		display: none;
+	}
 }
 /* BUTTON STYLES */
 	
@@ -985,15 +1093,16 @@ small.inline-input label {
 		height: 48px;
 		padding: 0 15px;
 		line-height: 46px;
+		font-size: 20px;
 	}
 	
 	.panel .button.arrow-right,
 	form .button.arrow-right {
-		max-width: 200px;
+		max-width: 250px;
 		margin: 10px 25px 10px auto;
 		text-transform: uppercase;
 	}
-	.panel .button.arrow-right {
+	div.panel .button.arrow-right {
 		max-width: none;
 	}
 	.panel .button.arrow-right .fa,
