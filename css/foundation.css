@@ -113,7 +113,19 @@ img {
 .map_canvas object {
     max-width: none !important;
 }
-
+.map-wrapper {
+	position: relative;
+	width: 100%;
+	height: 320px;
+	background: #eee;
+	margin-bottom: 30px;
+}
+.map-wrapper #map-canvas {
+	width: 100%;
+	height: 100%;
+	min-height: 320px;
+	margin: 0;
+}
 .left {
     float: left !important;
 }
@@ -1448,7 +1460,7 @@ button, .button {
     cursor: pointer;
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     font-weight: normal;
-    line-height: normal;
+    line-height: 1.75;
     margin: 0 0 1.25rem;
     position: relative;
     text-decoration: none;
@@ -1456,9 +1468,9 @@ button, .button {
     -webkit-appearance: none;
     border-radius: 0;
     display: inline-block;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     padding-right: 2rem;
-    padding-bottom: 1.0625rem;
+    padding-bottom: 0.75rem;
     padding-left: 2rem;
     font-size: 1rem;
     background-color: #FE0000;
@@ -4833,7 +4845,16 @@ a {
     transition: color 300ms ease-out;
     
 }
-
+a.icon-link {
+	font: 600 12px/1.2em "Raleway", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-decoration: none;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+a.icon-link .fa {
+	vertical-align: text-top;
+	margin-right: 5px;
+}
 a:hover, a:focus {
     color: #da0000;
 }
@@ -4853,10 +4874,14 @@ p {
     color: #666666;
     font-family: "OpenSans";
 }
-
+p.accent {
+	font: normal 18px/1.7 "Open Sans", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #777;
+	
+}
 p.lead {
-    font-size: 1.21875rem;
-    line-height: 1.6;
+    font: 400 20px/1.4 "Raleway", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    margin-bottom: 10px;
 }
 
 /* Default header styles */
@@ -4883,7 +4908,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 28px;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid #E7E6E2;
     margin-bottom: 1.1rem;

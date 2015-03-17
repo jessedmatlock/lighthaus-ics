@@ -1,9 +1,32 @@
-$(document).ready(function(){
+
+
+function initialize() {
+  var myLatlng = new google.maps.LatLng(40.752023, -73.990243);
+  var mapOptions = {
+    zoom: 14,
+    center: myLatlng
+  }
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'ICS'
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+
+(function($) {
 	
+	// init Foundation
+	$(document).foundation();
+
+	// demo of overlay -- click Logo to see it
 	$('#logo').click(function(){
 		$('body').append('<div id="preloader"><div id="preload-inner"><img src="img/logo.png" id=""  alt="" /><img src="img/preloader.gif" id="" alt="" /></div><!-- end div#preload-inner --></div>');
 		$("html").addClass('loading');					
-		
 	});
 	
 	$(document).on('click', '#preloader', function(){
@@ -11,15 +34,7 @@ $(document).ready(function(){
 		$("html").removeClass('loading');					
 	});
 	
-});  // end docready
-
-
-jQuery(function ($) {
-	$(window).load(function () {
-	//	$("#preloader").fadeOut(500);
-	//	$("html").removeClass('loading');					
-	}); // end window load
-}); // end function
+})(jQuery);
 
 // window scroll function to apply drop shadow to main nav, only after scolling 100px. To maintain design match.
 $(window).scroll(function() {    
@@ -32,4 +47,3 @@ $(window).scroll(function() {
 		$('.homepage #logo').attr('src','img/logo-light.png');
 	}
 });
-

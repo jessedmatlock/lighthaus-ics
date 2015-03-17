@@ -792,10 +792,6 @@ form .button {
 	margin-bottom: 0;
 }
 
-form .button.arrow-right {
-	max-width: 200px;
-	margin: 10px 25px 10px auto;
-}
 .homepage form .button.arrow-right {
 	margin: 0px 25px 0px auto;
 	line-height: 1.1;
@@ -986,6 +982,26 @@ small.inline-input label {
 		width: 80%;
 		transition: border-left-color 300ms ease-out;
 		margin-right:-1.4375rem;
+		height: 48px;
+		padding: 0 15px;
+		line-height: 46px;
+	}
+	
+	.panel .button.arrow-right,
+	form .button.arrow-right {
+		max-width: 200px;
+		margin: 10px 25px 10px auto;
+		text-transform: uppercase;
+	}
+	.panel .button.arrow-right {
+		max-width: none;
+	}
+	.panel .button.arrow-right .fa,
+	form .button.arrow-right .fa {
+		line-height: 46px;
+		margin-right: 5px;
+		vertical-align: top;
+		
 	}
 	
 	.button:not(.clear-button):hover:after,
