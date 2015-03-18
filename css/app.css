@@ -61,21 +61,7 @@
 	color: #EA812C !important;
 }
 
-.radio-2 {
-	display: block;
-	width: 50%;
-	float: left;
-	position: relative;
-	padding-left: 20px;
-	overflow: hidden;
-	margin-bottom: 10px;
-}
-.radio-2 input {
-	display: block;
-	position: absolute;
-	left: -18px;
-	top: 0;
-}
+
 /* ARTICLE LISTINGS */
 #articles {
 	margin-bottom: 40px;
@@ -120,12 +106,14 @@
 }
 .article-item {
 	margin-bottom: 30px;
+	display: block;
 }
 .article-item img {
 	display: block;
 	max-width: 100%;
 }
-.owl-item .article-item img {
+
+ .article-item img {
 	width: 100%;
 }
 .article-item .article-meta a {
@@ -146,6 +134,9 @@
 	font: 500 1.125em/1.4em "Raleway", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	margin-bottom: 10px;
 }
+
+
+
 .recent-articles .article-title {
 	margin-bottom: 20px;
 }
@@ -163,7 +154,7 @@
 }
 
 /* CAROUSEL ITEMS */
-.item {
+.owl-theme .item {
 	margin: 10px;
 }
 
@@ -173,8 +164,7 @@
 
 }
 
-.search-controls.bordered > .row,
-.blog-posts {
+.search-controls.bordered > .row {
 	margin-bottom: 20px !important;
 	padding-bottom: 20px;
 	border-bottom: 1px solid #eee;
@@ -861,6 +851,22 @@ form.light-form h3 {
 	color: #242639;
 }
 
+.radio-2 {
+	display: block;
+	width: 50%;
+	float: left;
+	position: relative;
+	padding-left: 20px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.radio-2 input[type=radio] {
+	display: block;
+	position: absolute;
+	left: 2px;
+	top: 0;
+}
+
 .button.postfix {
 	width: 45px;
 	border-radius: 45px;
@@ -875,6 +881,136 @@ form.light-form h3 {
 .button.postfix .fa {
 	color: #fff;
 }
+
+
+/* FORM STEPS */
+
+
+#form-steps {
+	display: block;
+	padding: 0;
+	margin: 0 !important;
+	overflow: hidden;
+}
+
+#form-steps:before,
+#form-steps:after {
+	content: " ";
+	display: table;
+}
+#form-steps .form-step a {
+	text-decoration: none;
+}
+
+#form-steps:after {
+    clear: both;
+}
+
+#form-steps .step {
+	font: 600 12px/1 "Raleway", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-transform: uppercase;
+	color: #FF0000;
+}
+
+#form-steps .step-label {
+	font: 500 14px/1.3 "Raleway", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #24283A;	
+}
+#form-steps .form-step.active .step-label,
+#form-steps .form-step a:hover .step-label {
+	color: #fff;
+}
+@media screen and (min-width:1024px) {
+
+	#form-steps .form-step {
+		float: left;
+		display: block;
+		width: 20%;
+	}
+	#form-steps .form-step a {
+		height: 70px;
+		width: 100%;
+		text-decoration: none; 
+		padding: 18px 0 10px 45px;
+		background: #E7E6E2;                   
+		position: relative; 
+		display: block;
+		float: left;
+		color: #24283A;
+		text-decoration: none;
+	}
+	
+	#form-steps .form-step a:after { 
+		content: " "; 
+		display: block; 
+		width: 0; 
+		height: 0;
+		border-top: 35px solid transparent;           
+		border-bottom: 35px solid transparent;
+		border-left: 30px solid #E7E6E2;
+		position: absolute;
+		top: 50%;
+		margin-top: -35px; 
+		left: 100%;
+		z-index: 2; 
+	}	
+	#form-steps .form-step a:before { 
+		content: " "; 
+		display: block; 
+		width: 0; 
+		height: 0;
+		border-top: 35px solid transparent;           
+		border-bottom: 35px solid transparent;
+		border-left: 30px solid white;
+		position: absolute;
+		top: 50%;
+		margin-top: -35px; 
+		margin-left: 1px;
+		left: 100%;
+		z-index: 1; 
+	}	
+	
+	#form-steps .form-step:first-child a {
+		padding-left: 20px;
+	}
+	#form-steps .form-step:last-child a {
+		width: auto;
+		min-width: 80%;
+	}	
+	#form-steps .form-step.active a,
+	#form-steps .form-step a:hover { background: #24283A; color: #fff; }
+	
+	#form-steps .form-step.active a:after,
+	#form-steps .form-step a:hover:after { border-left-color: #24283A !important; }
+	
+
+}
+#form-steps .form-step:nth-child(5) a       {}
+#form-steps .form-step:nth-child(5) a:after {}
+
+
+
+@media screen and (max-width:1024px) {
+	#form-steps .form-step a {
+		display: block;
+		float: none;
+		padding: 10px 0 0 20px;
+		margin-bottom: 5px;
+		height: 70px;
+		width: 100%;
+		background: #E7E6E2;
+	}
+
+	#form-steps .form-step.active a,
+	#form-steps .form-step:hover a{
+		background: #24283A;
+	}
+	
+}
+
+
+
+
 form textarea {
 	resize: vertical;
 	min-height: 200px;
