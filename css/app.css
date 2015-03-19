@@ -800,6 +800,7 @@ form {
 form.transparent {
 	background: none !important;
 	border: none;
+	padding: 20px 0;
 }
 form.sidebar-form {
 	padding-top: 0;
@@ -833,7 +834,6 @@ form.dark-form label {
 
 form h3 {
 	margin: 0 0 20px;
-	font-size: 1.5rem;
 }
 
 form select {
@@ -850,7 +850,12 @@ form.light-form  {
 form.light-form h3 {
 	color: #242639;
 }
-
+.radio-wrapper {
+	line-height: 45px;
+	border: 1px solid #ddd;
+	height: 45px;
+	padding: 15px;
+}
 .radio-2 {
 	display: block;
 	width: 50%;
@@ -959,13 +964,13 @@ form.light-form h3 {
 		display: block; 
 		width: 0; 
 		height: 0;
-		border-top: 35px solid transparent;           
-		border-bottom: 35px solid transparent;
-		border-left: 30px solid white;
+		border-top: 40px solid transparent;           
+		border-bottom: 40px solid transparent;
+		border-left: 35px solid white;
 		position: absolute;
 		top: 50%;
-		margin-top: -35px; 
-		margin-left: 1px;
+		margin-top: -40px; 
+		margin-left: 0px;
 		left: 100%;
 		z-index: 1; 
 	}	
