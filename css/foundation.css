@@ -4910,8 +4910,8 @@ p.lead {
     margin-bottom: 10px;
 }
 p.subheader {
-    font: 400 16px/1.4 "Open Sans", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-    margin-bottom: 10px;
+    font: 400 15px/1.4 "Open Sans", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    margin-bottom: 20px;
     color: #666666;
 }
 
@@ -4989,7 +4989,7 @@ hr {
     border: solid #DDDDDD;
     border-width: 1px 0 0;
     clear: both;
-    margin: 1.25rem 0 1.1875rem;
+    margin: 20px 0 35px;
     height: 0;
 }
 
