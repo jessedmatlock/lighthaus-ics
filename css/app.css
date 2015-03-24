@@ -268,7 +268,7 @@ ul.sidebar-menu li:focus a {
 	    width: 0;
 	    height: 0;
 	    border: inset 12px;
-		border-color: transparent #E7E6E2 transparent transparent !important;
+		border-color: rgba(255, 255, 255, 0) #E7E6E2 rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) !important;
 		-moz-border-right-colors: #E7E6E2;
 	    border-left-style: solid;
 	    margin-right: 0.9375rem;
@@ -1276,7 +1276,7 @@ small.inline-input label {
 	.button:not(.clear-button).arrow-right:after {
 		left:100%;
 		top:50%;
-		border:solid transparent;
+		border:solid rgba(255, 255, 255, 0);
 		content:" ";
 		height:0;
 		width:0;
@@ -1298,19 +1298,19 @@ small.inline-input label {
 	.button.arrow-down:after {
 		top:100%;
 		left:50%;
-		border: solid transparent;
+		border: solid rgba(255, 255, 255, 0);
 		content:" ";
 		height:0;
 		width:0;
 		position:absolute;
 		pointer-events:none;
 		border-style: solid;
-		border-color: #fe0000 transparent transparent transparent;
+		border-color: #fe0000 rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
 		border-width: 10px 75px 0 75px;
 		margin-left: -75px
 	}
 	.button.arrow-down:hover:after {
-		border-color: #cb0000 transparent transparent transparent !important;
+		border-color: #cb0000 rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) !important;
 	}
 	
 	
@@ -1353,7 +1353,7 @@ small.inline-input label {
 	.button.clear-button.arrow-right:after {
 		left:100%;
 		top:50%;
-		border:solid transparent;
+		border:solid rgba(255, 255, 255, 0);
 		content:" ";
 		height:0;
 		width:0;
@@ -1368,7 +1368,7 @@ small.inline-input label {
 	.button.clear-button.arrow-right:before {
 		left:100%;
 		top:50%;
-		border:solid transparent;
+		border:solid rgba(255, 255, 255, 0);
 		content:" ";
 		height:0;
 		width:0;
