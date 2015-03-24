@@ -279,6 +279,8 @@ ul.sidebar-menu li:focus a {
 	    z-index: 1;
 	    transition: all 300ms ease-out;
 	    opacity: 0.0;
+	    -moz-transform: scale(.9999);
+	    
 	}
 	
 	ul.sidebar-menu li:hover a:after,
@@ -1276,7 +1278,7 @@ small.inline-input label {
 	.button:not(.clear-button).arrow-right:after {
 		left:100%;
 		top:50%;
-		border:solid rgba(255, 255, 255, 0);
+		border: solid rgba(255, 255, 255, 0);
 		content:" ";
 		height:0;
 		width:0;
@@ -1285,7 +1287,10 @@ small.inline-input label {
 		border-color:rgba(254,0,0,0);
 		border-left-color:#FE0000;
 		border-width: 1.4375rem;
-		margin-top:-1.4375rem
+		margin-top:-1.4375rem;
+		-moz-transform: scale(.9999);
+		
+		
 	}
 	
 	/* down arrow button */
@@ -1293,6 +1298,7 @@ small.inline-input label {
 		width: 150px;
 		transition: border-color 300ms ease-out;
 		padding: 0.5rem 0 0.125rem;
+		
 	}
 	
 	.button.arrow-down:after {
@@ -1307,7 +1313,8 @@ small.inline-input label {
 		border-style: solid;
 		border-color: #fe0000 rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
 		border-width: 10px 75px 0 75px;
-		margin-left: -75px
+		margin-left: -75px;
+		-moz-transform: scale(.9999);
 	}
 	.button.arrow-down:hover:after {
 		border-color: #cb0000 rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) !important;
@@ -1362,7 +1369,9 @@ small.inline-input label {
 		border-color:rgba(254,0,0,0);
 		border-left-color:#fff;
 		border-width: 27px;
-		margin-top: -27px
+		margin-top: -27px;
+		-moz-transform: scale(.9999);
+		
 	}
 	
 	.button.clear-button.arrow-right:before {
