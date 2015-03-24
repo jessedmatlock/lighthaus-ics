@@ -49,3 +49,36 @@ $(window).scroll(function() {
 		$('.homepage #logo').attr('src','img/logo-light.png');
 	}
 });
+
+$('#advanced-search').click(function(){
+	$(".search-controls").toggleClass('show-advanced');			
+});
+
+var articles = $("#articles");
+
+    articles.owlCarousel({
+    itemsCustom : [
+	    [0, 1],
+	    [450, 1],
+	    [600, 2],
+	    [700, 3],
+	    [1000, 3],
+	    [1200, 3],
+	    [1400, 3],
+	    [1600, 3]
+    ],
+    pagination : false
+
+});
+ // Custom Navigation Events
+$(".article-next").click(function(){
+	articles.trigger('owl.next');
+})
+$(".article-prev").click(function(){
+	articles.trigger('owl.prev');
+})
+
+// Show/Hide for page assets
+$('.see-more').on('click', function(){
+	$(this).prev('.expandable').toggleClass('expanded');
+});
