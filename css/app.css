@@ -1,5 +1,6 @@
 /* @override 
-	http://ics.com/css/app.css */
+	http://ics.com/css/app.css
+	http://revivemarketing.github.io/lighthaus-ics/css/app.css */
 
 
 /* GLOBAL STYLES */
@@ -111,10 +112,12 @@
 .article-item img {
 	display: block;
 	max-width: 100%;
+		width: 100%;
+	
 }
 
- .article-item img {
-	width: 100%;
+.career-center .article-item img {
+	width: auto;
 }
 .article-item .article-meta a {
 	color: #666;
@@ -292,6 +295,13 @@ ul.sidebar-menu li:focus a {
 	background-color: #F8F7F6;
 	margin-top: 40px;
 	min-height: 500px;
+}
+@media screen and (max-width: 768px) {
+	.grid-box {
+		padding-bottom: 20px;
+		margin-top: 20px;
+		min-height: 400px;
+	}
 }
 .grid-box p {
 	font: normal 1em/1.7em "OpenSans", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
@@ -1036,8 +1046,10 @@ form .button {
 }
 
 .homepage form .button.arrow-right {
-	margin: 0px 25px 0px auto;
+	width: 200px;
+	margin: -20px 35px 0px auto;
 	line-height: 1.1;
+	word-wrap: break-word ;
 }
 
 form .text-link {
