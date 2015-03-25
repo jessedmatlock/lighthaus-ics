@@ -832,8 +832,8 @@ form label {
 form label.input {
 	padding-left: 20px;
 }
-form label input[type=checkbox],
-form label input[type=radio] {
+form label.input input[type=checkbox],
+form label.input input[type=radio] {
 	display: block;
 	position: absolute;
 	left: 0;
@@ -1217,7 +1217,7 @@ small.inline-input label {
 	margin: 0;
 }
 small.inline-input label {
-	margin-left: 10px;
+	margin-left: 10px !important;
 	margin: 5px 0 10px;
 }
 
