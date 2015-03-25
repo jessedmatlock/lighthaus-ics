@@ -1090,7 +1090,8 @@ form .upload-panel {
 }
 form .upload-panel .upload-text {
 	display: block;
-	width: 38%;
+	/* width: 38%; */
+	width: 57%;
 	margin: 0 1%;
 	float: left;
 
