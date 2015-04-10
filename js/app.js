@@ -82,3 +82,19 @@ $(".article-prev").click(function(){
 $('.see-more').on('click', function(){
 	$(this).prev('.expandable').toggleClass('expanded');
 });
+
+// comment reply settings for parent comment
+$('.comment-reply').click(function() {
+	$('#comment_form input[name=parent_id]').val($(this).attr('rel'));
+	
+	$('html, body').animate({
+        scrollTop: $("#commentForm").offset().top -90
+    }, 800);
+});
+
+// scroll to comments section when clicking comments counterIncrement
+$('.blog-entry a#gotoComments').click(function() {	
+	$('html, body').animate({
+        scrollTop: $("#commentsThread").offset().top -90
+    }, 800);
+});
