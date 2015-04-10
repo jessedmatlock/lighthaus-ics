@@ -164,7 +164,12 @@
 /* SEARCH CONTROLS */
 .search-controls {
 	margin-bottom: 20px;
-
+	padding:0;
+	border:0;
+	background:none;
+}
+form.search-controls {
+	margin-bottom:0px;
 }
 
 .search-controls.bordered > .row {
