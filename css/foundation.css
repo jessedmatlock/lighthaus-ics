@@ -3854,6 +3854,7 @@ meta.foundation-mq-topbar {
 }
 .panel ul.categories li {
 		font: 600 13px/1.2 "Raleway", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+		text-transform:uppercase;
 }
 .panel ul.categories li a {
 	text-decoration: none;
@@ -4972,6 +4973,7 @@ h4 {
 h5 {
     font: 600 .8em/1.2em "Raleway", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
     margin-bottom: 5px;
+    text-transform:uppercase;
 }
 
 h6 {
