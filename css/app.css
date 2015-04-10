@@ -776,6 +776,47 @@ footer #locations-list li:first-child:after {
 	margin-top: 10px;
 }
 
+ul#comments { list-style:none; margin:0; padding:0; }
+ul#comments li.comment { 
+	padding: 20px;
+	border: 1px solid #E7E6E2;	
+	margin-bottom: 20px;
+}
+ul#comments .author {
+	font: 600 13px/1.2 "Raleway", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #242639;
+	margin-bottom: 10px;
+}
+
+ul#comments p {
+	font: normal 14px/1.5 "Open Sans", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #666;	
+	margin-bottom: 10px;
+}
+ul#comments .comment-date {
+	float: right;	
+	font-weight: 500;
+}
+ul#comments .comment-reply {
+	font: normal 14px/1.5 "Open Sans", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	margin-bottom: 10px;
+	display: block;
+}
+ul#comments .reply-count {
+	font: 600 13px/1.2 "Raleway", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #242639;
+	margin-bottom: 15px;
+
+}
+ul#comments ul { margin:0; padding:0; list-style:none; }
+ul#comments ul li {
+	background: #F8F7F6;
+	padding: 10px !important;
+	margin-top: 10px !important;
+	border:none !important;
+	margin-bottom:0 !important;
+}
+
 
 #copyright {
 	background: #E7E6E2;
