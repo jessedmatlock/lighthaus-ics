@@ -4871,6 +4871,7 @@ a {
     color: #FE0000;
     line-height: inherit;
     transition: color 300ms ease-out;
+    text-decoration:none;
     
 }
 a.icon-link {
