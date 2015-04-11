@@ -98,3 +98,9 @@ $('.blog-entry a#gotoComments').click(function() {
         scrollTop: $("#commentsThread").offset().top -90
     }, 800);
 });
+
+// show file upload names on resume upload forms
+$('#freeform_resume_upload0').change(function(){
+   var filename = $(this).val();
+   $('input#upload-text').val(filename);
+});
