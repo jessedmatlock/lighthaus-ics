@@ -598,7 +598,7 @@ ul.sidebar-menu li:focus a {
 
 #services .expandable.expanded {
 	visibility: visible;
-	max-height: 700px;
+	max-height: 2700px;
 	margin: 0 0 20px 0;
 }
 
@@ -1441,6 +1441,8 @@ small.inline-input label {
 				border-left-color:#e5e5e5;
 		
 	}
+	
+	.button.decrease { font-size:16px !important; }
 	
 /*
 **
