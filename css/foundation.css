@@ -3017,7 +3017,8 @@ meta.foundation-mq-topbar {
 
     .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
         color: #fff;
-        background: #c60f13;
+        /* background: #c60f13; */
+        background: #FE0000;
         border-radius: 3px;
     }
 
