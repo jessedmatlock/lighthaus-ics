@@ -259,6 +259,7 @@ ul.sidebar-menu li a {
     background: #F8F7F6;
     text-decoration: none;
     text-transform: uppercase;
+    font-family:"Raleway", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;    
 }
 ul.sidebar-menu li.active a,
 ul.sidebar-menu li:hover a,
