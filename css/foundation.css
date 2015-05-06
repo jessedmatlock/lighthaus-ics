@@ -2326,7 +2326,7 @@ meta.foundation-mq-topbar {
 }
 
 .top-bar {
-    overflow: visible;
+    overflow: hidden;
     height: 9.375rem;
     line-height: 9.125rem;
     position: relative;
@@ -2443,6 +2443,8 @@ meta.foundation-mq-topbar {
 .top-bar.expanded {
     height: auto !important;
     background: transparent;
+        overflow: visible;
+    
 }
 .top-bar .name h1 a .show-for-expanded,
 .top-bar.expanded .name h1 a .hide-for-expanded {
