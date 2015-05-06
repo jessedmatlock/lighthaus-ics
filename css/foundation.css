@@ -2326,7 +2326,7 @@ meta.foundation-mq-topbar {
 }
 
 .top-bar {
-    overflow: hidden;
+    overflow: visible;
     height: 9.375rem;
     line-height: 9.125rem;
     position: relative;
@@ -2984,6 +2984,7 @@ meta.foundation-mq-topbar {
         overflow: visible;
         clip: auto;
         position: absolute !important;
+
     }
 
     .top-bar-section .has-dropdown > a:focus + .dropdown {
