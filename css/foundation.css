@@ -1,3 +1,6 @@
+/* @override http://ics.devurlonly2.com/assets/css/foundation.css
+	http://ics.com/css/foundation.css */
+
 /* @override 
 	http://ics.com/css/foundation.css
 	http://revivemarketing.github.io/lighthaus-ics/css/foundation.css */
@@ -2438,7 +2441,7 @@ meta.foundation-mq-topbar {
 }
 
 .top-bar.expanded {
-    height: auto;
+    height: auto !important;
     background: transparent;
 }
 .top-bar .name h1 a .show-for-expanded,
@@ -2446,7 +2449,9 @@ meta.foundation-mq-topbar {
 	display: none !important;
 }
 
-
+.top-bar .name img {
+	max-height: 100%;
+}
 .top-bar.expanded .name h1 a .show-for-expanded {
 	display: block !important;
 }
@@ -2524,6 +2529,26 @@ meta.foundation-mq-topbar {
     border-color: #fff transparent transparent transparent;
 }
 
+    .top-bar-section .has-dropdown > a {
+        padding-right: 2.1875rem !important;
+    }
+     .top-bar-section .has-dropdown > a:after {
+        content: "";
+        display: inline-block;
+        float: right;
+        width: 0;
+        height: 0;
+        border: inset 5px;
+        border-color: transparent transparent transparent #24283A  !important;
+        border-top-style: solid;
+        margin-top: 10px;
+        top: 50%;
+    }
+
+    .top-bar-section .has-dropdown > a:hover:after,
+    .top-bar-section .has-dropdown.active > a:after {
+        border-color: transparent transparent transparent #000  !important;
+    }
 
 .top-bar-section ul li > a.button {
     font-size: 0.8125rem;
@@ -2925,25 +2950,18 @@ meta.foundation-mq-topbar {
         color: #ff0000;
     }
 
-    /*.top-bar-section .has-dropdown > a {
-        padding-right: 2.1875rem !important;
+    .top-bar-section .has-dropdown > a {
+        padding-right: 1rem !important;
     }
      .top-bar-section .has-dropdown > a:after {
         content: "";
-        display: block;
-        width: 0;
-        height: 0;
-        border: inset 5px;
-        border-color: #24283A transparent transparent transparent;
-        border-top-style: solid;
-        margin-top: -2.5px;
-        top: 50%;
+        display: none;
     }
 
     .top-bar-section .has-dropdown > a:hover:after,
     .top-bar-section .has-dropdown.active > a:after {
-        border-color: #c60f13 transparent transparent transparent;
-    }*/
+
+    }
 
     .top-bar-section .has-dropdown.moved {
         position: relative;
