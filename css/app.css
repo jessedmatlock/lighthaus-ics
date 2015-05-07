@@ -715,12 +715,17 @@ footer #locations-list li:first-child:after {
 	text-align: left;
 }
 
+#content-section #social-icons .addthis_32x32_style {
+	display:inline-block !important;
+	vertical-align:bottom;
+}
+
 #content-section #social-icons .icons-title {
 	font-size: 13px;
 	letter-spacing: 1px;
 	color: #242739;
-	height: 30px;
-	line-height: 28px;	
+	height: 40px;
+	line-height: 40px;	
 }
 #social-icons a {
 	text-decoration: none;
