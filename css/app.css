@@ -1290,6 +1290,12 @@ small.inline-input label {
 	form .button.arrow-right:after {
 		display: none;
 	}
+	.job-post-wrapper  .cta-button {
+		margin-bottom: 20px;
+		margin-top: 30px !important;
+		padding: 0.625rem 0.5rem;
+	}
+	
 }
 /* BUTTON STYLES */
 	
