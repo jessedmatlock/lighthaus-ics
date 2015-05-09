@@ -4,6 +4,7 @@
 
 
 /* GLOBAL STYLES */
+a, button { outline:none !important; }
 #printNav { display:none; }
 .inline-block {
 	display: inline-block !important;
@@ -62,7 +63,6 @@
 .orange-text {
 	color: #EA812C !important;
 }
-
 
 /* ARTICLE LISTINGS */
 #articles {
@@ -259,7 +259,7 @@ ul.sidebar-menu li a {
     background: #F8F7F6;
     text-decoration: none;
     text-transform: uppercase;
-    font-family:"Raleway", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;    
+    font-family:"Raleway", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 ul.sidebar-menu li.active a,
 ul.sidebar-menu li:hover a,
@@ -648,6 +648,7 @@ footer #locations-list li {
 	position: relative;
 	font-family: "Raleway";
 	font-size: 18px;
+	text-transform:uppercase;
 }
 
 footer #locations-list li.separator {
@@ -665,6 +666,11 @@ footer #locations-list li.separator:before {
 	position: relative;
 	top: -4px;
 }
+
+footer #locations-list li.separator:last-child {
+	display:none;
+}
+
 footer #locations-list li:first-child:after {
 	display: none;	
 }
@@ -1295,7 +1301,7 @@ small.inline-input label {
 		margin-top: 30px !important;
 		padding: 0.625rem 0.5rem;
 	}
-	
+
 }
 /* BUTTON STYLES */
 	
@@ -1454,7 +1460,7 @@ small.inline-input label {
 		
 	}
 	
-	.button.decrease { font-size:16px !important; }
+	.button.decrease { font-size:16px !important; }	
 	
 /*
 **
